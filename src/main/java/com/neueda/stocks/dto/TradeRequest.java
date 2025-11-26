@@ -6,7 +6,7 @@ public class TradeRequest {
     private int volume;
     private double price;
     private String buyOrSell;
-    private String statusCode;
+    private int statusCode;
 
     public String getStockTicker() {
         return stockTicker;
@@ -40,11 +40,11 @@ public class TradeRequest {
         this.buyOrSell = buyOrSell;
     }
 
-    public String getStatusCode() {
+    public int getStatusCode() {
         return statusCode;
     }
 
-    public void setStatusCode(String statusCode) {
+    public void setStatusCode(int statusCode) {
         this.statusCode = statusCode;
     }
 }

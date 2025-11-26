@@ -17,7 +17,7 @@ public class TradeService {
         this.tradeInfoRepository = tradeInfoRepository;
     }
 
-    public TradeInfo createTrade(TradeInfo tradeInfo, String statusCode) {
+    public TradeInfo createTrade(TradeInfo tradeInfo, int statusCode) {
         TradeStatus tradeStatus = new TradeStatus();
         tradeStatus.setStatusCode(statusCode);
         tradeStatus.setTradeInfo(tradeInfo);

@@ -12,7 +12,7 @@ public class TradeStatus {
     private Long id;
 
     @Column(name = "status_code", nullable = false)
-    private String statusCode;
+    private int statusCode;
 
     @OneToOne
     @MapsId
@@ -29,11 +29,11 @@ public class TradeStatus {
         this.id = id;
     }
 
-    public String getStatusCode() {
+    public int getStatusCode() {
         return statusCode;
     }
 
-    public void setStatusCode(String statusCode) {
+    public void setStatusCode(int statusCode) {
         this.statusCode = statusCode;
     }
 
